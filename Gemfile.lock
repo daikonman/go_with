@@ -246,7 +246,7 @@ DEPENDENCIES
   listen
   minitest
   minitest-reporters
-  pg (= 1.1.4)
+  pg
   puma
   rails (~> 6.1.3)
   rails-controller-testing
