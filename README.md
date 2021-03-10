@@ -1,24 +1,7 @@
-# README
+# go with
+# 行きたい場所に一緒に行ってくれる人を探すアプリケーション
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+go with
 
-Things you may want to cover:
+行きたい場所に一緒に行ってくれる人を探すアプリケーション
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
