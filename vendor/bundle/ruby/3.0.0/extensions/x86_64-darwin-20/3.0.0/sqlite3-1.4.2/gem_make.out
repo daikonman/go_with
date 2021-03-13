@@ -1,5 +1,5 @@
 current directory: /Users/naitoudaiki/rails_develop/environment/go_with/vendor/bundle/ruby/3.0.0/gems/sqlite3-1.4.2/ext/sqlite3
-/Users/naitoudaiki/.rbenv/versions/3.0.0/bin/ruby -I /Users/naitoudaiki/.rbenv/versions/3.0.0/lib/ruby/3.0.0 -r ./siteconf20210310-95039-c46fly.rb extconf.rb
+/Users/naitoudaiki/.rbenv/versions/3.0.0/bin/ruby -I /Users/naitoudaiki/.rbenv/versions/3.0.0/lib/ruby/3.0.0 -r ./siteconf20210313-3384-f3lfom.rb extconf.rb
 checking for sqlite3.h... yes
 checking for pthread_create() in -lpthread... yes
 checking for -ldl... yes
@@ -76,4 +76,4 @@ linking shared-object sqlite3/sqlite3_native.bundle
 
 current directory: /Users/naitoudaiki/rails_develop/environment/go_with/vendor/bundle/ruby/3.0.0/gems/sqlite3-1.4.2/ext/sqlite3
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 sqlite3_native.bundle ./.gem.20210310-95039-to9042/sqlite3
+/usr/bin/install -c -m 0755 sqlite3_native.bundle ./.gem.20210313-3384-6jlzho/sqlite3

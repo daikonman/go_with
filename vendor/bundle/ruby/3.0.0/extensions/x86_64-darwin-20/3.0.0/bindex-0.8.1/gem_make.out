@@ -1,5 +1,5 @@
 current directory: /Users/naitoudaiki/rails_develop/environment/go_with/vendor/bundle/ruby/3.0.0/gems/bindex-0.8.1/ext/skiptrace
-/Users/naitoudaiki/.rbenv/versions/3.0.0/bin/ruby -I /Users/naitoudaiki/.rbenv/versions/3.0.0/lib/ruby/3.0.0 -r ./siteconf20210310-95039-cap2kb.rb extconf.rb
+/Users/naitoudaiki/.rbenv/versions/3.0.0/bin/ruby -I /Users/naitoudaiki/.rbenv/versions/3.0.0/lib/ruby/3.0.0 -r ./siteconf20210313-3384-ayvxt0.rb extconf.rb
 creating Makefile
 
 current directory: /Users/naitoudaiki/rails_develop/environment/go_with/vendor/bundle/ruby/3.0.0/gems/bindex-0.8.1/ext/skiptrace
@@ -12,4 +12,4 @@ linking shared-object skiptrace/internal/cruby.bundle
 
 current directory: /Users/naitoudaiki/rails_develop/environment/go_with/vendor/bundle/ruby/3.0.0/gems/bindex-0.8.1/ext/skiptrace
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 cruby.bundle ./.gem.20210310-95039-qmhfun/skiptrace/internal
+/usr/bin/install -c -m 0755 cruby.bundle ./.gem.20210313-3384-aallu8/skiptrace/internal

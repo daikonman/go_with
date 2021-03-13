@@ -1,5 +1,5 @@
 current directory: /Users/naitoudaiki/rails_develop/environment/go_with/vendor/bundle/ruby/3.0.0/gems/nio4r-2.5.7/ext/nio4r
-/Users/naitoudaiki/.rbenv/versions/3.0.0/bin/ruby -I /Users/naitoudaiki/.rbenv/versions/3.0.0/lib/ruby/3.0.0 -r ./siteconf20210310-95039-x3jstz.rb extconf.rb
+/Users/naitoudaiki/.rbenv/versions/3.0.0/bin/ruby -I /Users/naitoudaiki/.rbenv/versions/3.0.0/lib/ruby/3.0.0 -r ./siteconf20210313-3384-h9vpqg.rb extconf.rb
 checking for unistd.h... yes
 checking for linux/aio_abi.h... no
 checking for linux/io_uring.h... no
@@ -107,4 +107,4 @@ linking shared-object nio4r_ext.bundle
 
 current directory: /Users/naitoudaiki/rails_develop/environment/go_with/vendor/bundle/ruby/3.0.0/gems/nio4r-2.5.7/ext/nio4r
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 nio4r_ext.bundle ./.gem.20210310-95039-4dh8ez
+/usr/bin/install -c -m 0755 nio4r_ext.bundle ./.gem.20210313-3384-aqgip7

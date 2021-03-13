@@ -1,5 +1,5 @@
 current directory: /Users/naitoudaiki/rails_develop/environment/go_with/vendor/bundle/ruby/3.0.0/gems/racc-1.5.2/ext/racc/cparse
-/Users/naitoudaiki/.rbenv/versions/3.0.0/bin/ruby -I /Users/naitoudaiki/.rbenv/versions/3.0.0/lib/ruby/3.0.0 -r ./siteconf20210310-95039-y7qt80.rb extconf.rb
+/Users/naitoudaiki/.rbenv/versions/3.0.0/bin/ruby -I /Users/naitoudaiki/.rbenv/versions/3.0.0/lib/ruby/3.0.0 -r ./siteconf20210313-3384-zo5faq.rb extconf.rb
 checking for rb_ary_subseq()... yes
 creating Makefile
 
@@ -13,4 +13,4 @@ linking shared-object racc/cparse.bundle
 
 current directory: /Users/naitoudaiki/rails_develop/environment/go_with/vendor/bundle/ruby/3.0.0/gems/racc-1.5.2/ext/racc/cparse
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 cparse.bundle ./.gem.20210310-95039-2dwznt/racc
+/usr/bin/install -c -m 0755 cparse.bundle ./.gem.20210313-3384-k6zqdy/racc

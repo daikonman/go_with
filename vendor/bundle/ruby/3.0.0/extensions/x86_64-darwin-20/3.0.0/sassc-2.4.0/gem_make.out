@@ -1,5 +1,5 @@
 current directory: /Users/naitoudaiki/rails_develop/environment/go_with/vendor/bundle/ruby/3.0.0/gems/sassc-2.4.0/ext
-/Users/naitoudaiki/.rbenv/versions/3.0.0/bin/ruby -I /Users/naitoudaiki/.rbenv/versions/3.0.0/lib/ruby/3.0.0 -r ./siteconf20210310-95039-t9s6hl.rb extconf.rb
+/Users/naitoudaiki/.rbenv/versions/3.0.0/bin/ruby -I /Users/naitoudaiki/.rbenv/versions/3.0.0/lib/ruby/3.0.0 -r ./siteconf20210313-3384-ao25xw.rb extconf.rb
 creating Makefile
 
 current directory: /Users/naitoudaiki/rails_develop/environment/go_with/vendor/bundle/ruby/3.0.0/gems/sassc-2.4.0/ext
@@ -77,4 +77,4 @@ linking shared-object sassc/libsass.bundle
 
 current directory: /Users/naitoudaiki/rails_develop/environment/go_with/vendor/bundle/ruby/3.0.0/gems/sassc-2.4.0/ext
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 libsass.bundle ./.gem.20210310-95039-7lmt1n/sassc
+/usr/bin/install -c -m 0755 libsass.bundle ./.gem.20210313-3384-3swums/sassc
