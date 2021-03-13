@@ -1,23 +1,56 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= yield(:title) %> | go with</title>
+    <title><%= full_title(yield(:title)) %></title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" type="text/css" href="/css/semantic.min.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous"></script>
+    <script src="/js/semantic.min.js"></script>  
+    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+    <script>
+      $(function() {
+        const hum = $('#hamburger, .close')
+        const nav = $('.sp-nav')
+        hum.on('click', function(){
+          nav.toggleClass('toggle');
+        });
+      });
+    </script>
   </head>
 
   <body>
     <header>
-      <h1>go with</h1>
+      <h1>
+         <a href="/">go with</a>
+      </h1>
+      <nav class="pc-nav">
+         <ul>
+            <li><a href="#">利用規約</a></li>
+            <li><a href="#">プライバシーポリシー</a></li>
+            <li><a href="#">ログイン</a></li>
+         </ul>
+      </nav>
+      <nav class="sp-nav">
+         <ul>
+            <li><a href="#">利用規約</a></li>
+            <li><a href="#">プライバシーポリシー</a></li>
+            <li><a href="#">ログイン</a></li>
+            <li class="close"><span>閉じる</span></li>
+         </ul>
+      </nav>
+      <div id="hamburger">
+         <span></span>
+      </div>
     </header>
-    <%= yield %>
-
-    <footer>
-        <a href="#">利用規約</a>
-        <a href="#">プライバシーポリシー</a>
+    <div class="main-visual">
+      <%= yield %>
+    </div>
+    <footer class="site-footer">
     </footer>
   </body>
 </html>
