@@ -6,13 +6,12 @@
     <%= csp_meta_tag %>
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <link rel="stylesheet" type="text/css" href="/css/semantic.min.css">
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"
       integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
       crossorigin="anonymous"></script>
-    <script src="/js/semantic.min.js"></script>  
     <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
     <script>
+    document.addEventListener("turbolinks:load", function () {
       $(function() {
         const hum = $('#hamburger, .close')
         const nav = $('.sp-nav')
@@ -20,6 +19,7 @@
           nav.toggleClass('toggle');
         });
       });
+    });
     </script>
   </head>
 
@@ -49,7 +49,9 @@
     </header>
     <div class="main-visual">
       <%= yield %>
+      <div id="button"></div>
     </div>
+    <%= debug(params) if Rails.env.development? %>
     <footer class="site-footer">
     </footer>
   </body>

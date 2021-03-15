@@ -12,6 +12,8 @@ gem 'jbuilder'
 gem 'bootsnap', require: false
 gem 'semantic-ui-sass', github: 'doabit/semantic-ui-sass'
 gem 'rexml'
+gem "jquery-rails"
+gem 'jquery-turbolinks'
 
 group :development, :test do
   gem 'sqlite3'
