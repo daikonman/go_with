@@ -17,4 +17,16 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
     assert_select "title", "#{@base_title}"
   end
 
+  test "should get terms" do
+    get terms_path
+    assert_response :success
+    assert_select "title", "Terms | #{@base_title}"
+  end
+
+  test "should get privacy" do
+    get privacy_path
+    assert_response :success
+    assert_select "title", "Privacy | #{@base_title}"
+  end
+
 end
