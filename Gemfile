@@ -4,6 +4,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '3.0.0'
 
 gem 'rails', '~> 6.1.3'
+gem 'carrierwave'
+gem 'rails-i18n'
 gem 'bcrypt'
 gem 'puma'
 gem 'sassc-rails'

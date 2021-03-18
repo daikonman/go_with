@@ -5,6 +5,8 @@ body {
    font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "Helvetica Neue", Helvetica, Arial, sans-serif;
    background-color: #fff;
    letter-spacing : 0.2em;
+   display: flex;
+   flex-direction: column;
 }
 header {
    padding: 10px 4% 10px;
@@ -16,6 +18,10 @@ header {
    align-items: center;
    background-color: rgb(250, 168, 236);
 
+   h1 {
+      margin: 0; padding: 0;
+      font-size: 30px;
+   }   
    a {	
       text-decoration: none;
       color: #fff;
@@ -55,17 +61,128 @@ footer {
 
 }
 
-h1 {
-   margin: 0; padding: 0;
-   font-size: 30px;
+/* forms */
+
+.form-wrapper {
+   margin-top: 80px;
+   margin-left: auto;
+   margin-right: auto;
+   max-width: 720px;
+}
+@media screen and (max-width: 480px) {
+   .form-wrapper {
+     margin-top: 40px;
+   }
+}
+
+.form-item {
+   border-top: 1px solid #ddd;
+   padding-top: 24px;
+   padding-bottom: 24px;
+   width: 100%;
+   display: flex;
+   align-items: center;
+}
+ @media screen and (max-width: 480px) {
+   .form-item {
+     padding-left: 14px;
+     padding-right: 14px;
+     padding-top: 16px;
+     padding-bottom: 16px;
+     flex-wrap: wrap;
+   }
+}
+label {
+   width: 30%;
+   max-width: 248px;
+   letter-spacing: 0.05em;
+   font-weight: bold;
+   font-size: 18px;
+}
+@media screen and (max-width: 480px) {
+   label {
+      width: 100%;
+      max-width: inherit;
+      display: flex;
+      align-items: center;
+      font-size: 15px;
+   }
+}
+
+.field_with_errors {
+   display: contents;
+}
+
+input {
+   border: 1px solid #ddd;
+   border-radius: 6px;
+   margin-left: 40px;
+   padding-left: 1em;
+   padding-right: 1em;
+   height: 48px;
+   flex: 1;
+   width: 100%;
+   max-width: 410px;
+   background: #eaedf2;
+   font-size: 18px;
+}
+@media screen and (max-width: 480px) {
+   input {
+     margin-left: 0;
+     margin-top: 18px;
+     height: 40px;
+     flex: inherit;
+     font-size: 15px;
+   }
+}
+
+.form-btn {
+   border-radius: 6px;
+   margin-top: 32px;
+   margin-left: auto;
+   margin-right: auto;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   width: 280px;
+   display: block;
+   letter-spacing: 0.05em;
+   color: #fff;
+   font-weight: bold;
+   font-size: 20px;
+}
+@media screen and (max-width: 480px) {
+   .form-btn {
+     margin-top: 24px;
+     padding-top: 8px;
+     padding-bottom: 8px;
+     width: 160px;
+     font-size: 16px;
+   }
+}
+
+#error_explanation {
+   color: red;
+   ul {
+     color: red;
+     margin: 0 0 30px 0;
+   }
+}
+
+
+/* shered */
+
+.page-title {
+   margin: 0 auto;
 }
 
 .main-visual {
    display: flex;
+   flex-direction: column;
    justify-content: center;
    align-items: center;
-   height: 100vh;
+   min-height: 100vh   
 }
+
 h2 {
    margin: 0;
    font-size: 30px;
@@ -77,9 +194,11 @@ h2 {
    display: none;
 }
 
-.button_wrapper {
-  text-align: center;
+.button-wrapper {
+   text-align: center;
 }
+
+ 
 
 @media screen and (max-width: 640px) {
    .pc-nav {

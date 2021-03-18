@@ -1,0 +1,9 @@
+<% provide(:title, @user.name) %>
+<h1>
+  <% if @user.image.attached? %>
+    <%= image_tag @user.image.url %>
+  <% else %>
+    <%= image_tag "/assets/default.jpg", :size => '100x100' %>
+  <% end %>
+  <%= @user.name %>
+</h1>
