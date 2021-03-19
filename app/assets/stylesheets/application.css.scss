@@ -82,6 +82,27 @@ footer {
    width: 100%;
    display: flex;
    align-items: center;
+
+   .checkbox-item {
+      width: 100%;
+      font-size: 15px;
+      cursor:	pointer;
+      display: inline-block;
+
+      .checkbox {
+         width: 20px;
+         height: 20px;
+         margin: 0;
+         cursor:	pointer;
+      }
+
+      span {
+         position:relative;
+         top: -4px;
+      }
+   
+   }
+
 }
  @media screen and (max-width: 480px) {
    .form-item {
@@ -93,6 +114,7 @@ footer {
    }
 }
 label {
+   display: flex;
    width: 30%;
    max-width: 248px;
    letter-spacing: 0.05em;
@@ -126,6 +148,11 @@ input {
    background: #eaedf2;
    font-size: 18px;
 }
+
+.debug_dump {
+   text-align: center;
+}
+
 @media screen and (max-width: 480px) {
    input {
      margin-left: 0;
