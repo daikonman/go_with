@@ -6,18 +6,28 @@
     <ul>
       <li><%= link_to "利用規約", terms_path %></li>
       <li><%= link_to "プライバシーポリシー", privacy_path %></li>
-      <li><%= link_to "ログイン", login_path %></li>
+      <% if logged_in? %>
+        <li><%= link_to "マイページ", current_user %></li>
+        <li><%= link_to "ログアウト", logout_path, method: :delete %></li>
+      <% else %>
+        <li><%= link_to "ログイン", login_path %></li>
+      <% end %>
     </ul>
   </nav>
   <nav class="sp-nav">
     <ul>
       <li><%= link_to "利用規約", terms_path %></li>
       <li><%= link_to "プライバシーポリシー", privacy_path %></li>
-      <li><%= link_to "ログイン", login_path %></li>
+      <% if logged_in? %>
+        <li><%= link_to "マイページ", current_user %></li>
+        <li><%= link_to "ログアウト", logout_path, method: :delete %></li>
+      <% else %>
+        <li><%= link_to "ログイン", login_path %></li>
+      <% end %>
       <li class="close"><span>閉じる</span></li>
     </ul>
   </nav>
   <div id="hamburger">
-      <span></span>
+    <span></span>
   </div>
 </header>
