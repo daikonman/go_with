@@ -4,6 +4,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '3.0.0'
 
 gem 'rails', '~> 6.1.3'
+gem 'faker'
 gem 'carrierwave'
 gem 'rails-i18n'
 gem 'bcrypt'
@@ -17,6 +18,7 @@ gem 'semantic-ui-sass', github: 'doabit/semantic-ui-sass'
 gem 'rexml'
 gem "jquery-rails"
 gem 'jquery-turbolinks'
+gem 'kaminari'
 
 group :development, :test do
   gem 'sqlite3'
