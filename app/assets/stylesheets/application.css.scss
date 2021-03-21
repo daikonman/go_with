@@ -67,9 +67,9 @@ footer {
    margin-top: 80px;
    margin-left: auto;
    margin-right: auto;
-   max-width: 720px;
+   max-width: 800px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
    .form-wrapper {
      margin-top: 40px;
    }
@@ -104,7 +104,7 @@ footer {
    }
 
 }
- @media screen and (max-width: 480px) {
+ @media screen and (max-width: 600px) {
    .form-item {
      padding-left: 14px;
      padding-right: 14px;
@@ -115,13 +115,13 @@ footer {
 }
 label {
    display: flex;
-   width: 30%;
+   width: 40%;
    max-width: 248px;
    letter-spacing: 0.05em;
    font-weight: bold;
    font-size: 18px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
    label {
       width: 100%;
       max-width: inherit;
@@ -138,7 +138,7 @@ label {
 input {
    border: 1px solid #ddd;
    border-radius: 6px;
-   margin-left: 40px;
+   margin-left: 10px;
    padding-left: 1em;
    padding-right: 1em;
    height: 48px;
@@ -153,7 +153,7 @@ input {
    text-align: center;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
    input {
      margin-left: 0;
      margin-top: 18px;
@@ -194,7 +194,9 @@ input {
      margin: 0 0 30px 0;
    }
 }
-
+.forgot-password {
+   margin: 5px 10px;
+}
 
 /* shered */
 
