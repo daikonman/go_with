@@ -6,5 +6,11 @@
       <%= link_to "削除", micropost, method: :delete,
                                        data: { confirm: "本当に削除しますか?" } %>
     <% end %>
+    <% if current_user.already_favorited?(micropost) %>
+      <%= link_to "いいねを外す", micropost_favorites_path(micropost), method: :delete %>
+    <% else %>
+      <%= link_to "いいね", micropost_favorites_path(micropost), method: :post %>
+    <% end %>
+    <%= micropost.favorites.count %>
   </span>
 </li>

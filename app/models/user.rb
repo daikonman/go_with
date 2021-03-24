@@ -10,6 +10,7 @@ class User < ApplicationRecord
   has_secure_password
   validates :password, presence: true, length: { minimum: 6 }, allow_nil: true
   has_many :microposts, dependent: :destroy
+  has_many :favorites, dependent: :destroy
 
   # 渡された文字列のハッシュ値を返す
   def self.digest(string)
@@ -71,6 +72,10 @@ class User < ApplicationRecord
     Micropost.where("user_id = ?", id)
   end
 
+  # 既にいいねしているかの判定
+  def already_favorited?(micropost)
+    self.favorites.exists?(micropost_id: micropost.id)
+  end
 
   private
 
