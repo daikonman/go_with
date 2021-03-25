@@ -6,15 +6,8 @@
       <%= link_to "削除", micropost, method: :delete,
                                        data: { confirm: "本当に削除しますか?" } %>
     <% end %>
-    <% if current_user.already_favorited?(micropost) %>
-      <%= link_to micropost_favorites_path(micropost), method: :delete do %>
-        <i class="fas fa-star"></i>
-      <% end %>
-    <% else %>
-      <%= link_to micropost_favorites_path(micropost), method: :post do %>
-        <i class="far fa-star"></i>
-      <% end %>
-    <% end %>
-    <%= micropost.favorites.count %>
+    <div id="favorites_buttons_<%= micropost.id %>">
+      <%= render partial: 'favorites/favorite', locals: {micropost: micropost} %>
+    </div>
   </span>
 </li>

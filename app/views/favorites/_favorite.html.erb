@@ -1,0 +1,10 @@
+<% if current_user.already_favorited?(micropost) %>
+  <%= link_to micropost_favorites_path(micropost), method: :delete, remote: true do %>
+    <i class="fas fa-star"></i>
+  <% end %>
+<% else %>
+  <%= link_to micropost_favorites_path(micropost), method: :post, remote: true do %>
+    <i class="far fa-star"></i>
+  <% end %>
+<% end %>
+<%= micropost.favorites.count %>
