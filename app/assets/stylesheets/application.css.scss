@@ -135,6 +135,12 @@ label {
 .field_with_errors {
    display: contents;
 }
+.alert {
+   margin-bottom: 10px;
+}
+.alert-danger {
+   color: red;
+}
 
 input {
    border: 1px solid #ddd;
@@ -206,9 +212,9 @@ input {
 }
 
 .main-visual {
+   padding-top: 150px;
    display: flex;
    flex-direction: column;
-   justify-content: center;
    align-items: center;
    min-height: 100vh   
 }
@@ -341,9 +347,6 @@ p {
       transform: translateY( 0 );
       opacity: 1;
    }
-   .main-visual {
-      padding: 0 4%;
-   }
    h2 {
       line-height: 1.6;
       text-align: center;
@@ -408,5 +411,19 @@ span.image {
    margin-top: 10px;
    input {
      border: 0;
+   }
+}
+
+/* users */
+
+
+.users {
+   list-style: none;
+   margin: 10 auto;
+   padding: 0;
+   li {
+     overflow: auto;
+     padding: 10px 0;
+     border-bottom: 1px solid #ddd;
    }
 }

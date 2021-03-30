@@ -1,0 +1,15 @@
+<% provide(:title, '行きたい！を押したユーザー') %>
+<h3>行きたい！を押したユーザー</h3>
+
+<ul class="users">
+<% if @favorites.any? %>
+  <% @favorites.each do |favorite| %>
+    <li>
+      <span class="user-image"><%= link_to gravatar_for(favorite.user, size: 50), favorite.user %></span>
+      <span class="user-name"><%= favorite.user.name %></span>
+    </li>
+  <% end %>
+<% else %>
+  <li>行きたい！を押したユーザーはいません</li>
+<% end %>
+</ul>

@@ -7,4 +7,6 @@
     <i class="far fa-star"></i>
   <% end %>
 <% end %>
-<%= micropost.favorites.count %>
+<%= link_to micropost_favorites_path(micropost), method: :get do %>
+  <span><%= micropost.favorites.count %></span>
+<% end %>
