@@ -427,3 +427,43 @@ span.image {
      border-bottom: 1px solid #ddd;
    }
 }
+
+/* search-form */
+
+.search-form {
+   form{
+      display: flex;
+   }
+   input {
+      flex: inherit;
+   }
+}
+
+#search{
+   margin: 0;
+   width: 80%;
+   outline:0;
+   height:30px;	
+   padding:0 10px;
+   border-radius:2px 0 0 2px;	
+   background:#eee;
+}
+
+#sbtn{
+   margin: 0;
+   padding: 0;
+   width: 20%;
+   height:30px; 
+   border-radius:0 2px 2px 0; 
+   background: rgb(250, 168, 236);
+   border:none;
+   color:#fff;
+   font-weight:bold;
+   font-size:16px;
+   text-align: center;
+}
+
+/*検索ボタンマウスオーバー時*/
+#sbtn:hover{
+   color:#666;/*検索ボタンマウスオーバー時のフォントカラー*/ 
+}

@@ -77,6 +77,14 @@ class User < ApplicationRecord
     self.favorites.exists?(micropost_id: micropost.id)
   end
 
+  def self.search(search)
+    if search
+      where(['name LIKE ?', "%#{search}%"]) # 検索とnameの部分一致を表示
+    else
+      all # 全て表示。User.は省略
+    end
+  end
+
   private
 
     # メールアドレスをすべて小文字にする

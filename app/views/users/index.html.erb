@@ -1,6 +1,8 @@
 <% provide(:title, '全てのユーザー') %>
 <h1>全てのユーザー</h1>
 
+<%= render 'shared/search_form' %>
+
 <ul class="users">
   <%= render @users %>
 </ul>
