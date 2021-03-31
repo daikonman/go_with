@@ -84,4 +84,12 @@ class UserTest < ActiveSupport::TestCase
     end
   end
 
+  test "associated favorites should be destroyed" do
+    @user.save
+    @user.favorites.create!(micropost_id: microposts(:ants).id)
+    assert_difference 'Favorite.count', -1 do
+      @user.destroy
+    end
+  end
+
 end

@@ -4,7 +4,6 @@ class MicropostTest < ActiveSupport::TestCase
 
   def setup
     @user = users(:michael)
-    # このコードは慣習的に正しくない
     @micropost = @user.microposts.build(content: "Lorem ipsum")
   end
 
@@ -29,5 +28,13 @@ class MicropostTest < ActiveSupport::TestCase
 
   test "order should be most recent first" do
     assert_equal microposts(:most_recent), Micropost.first
+  end
+
+  test "associated favorites should be destroyed" do
+    @micropost.save
+    @micropost.favorites.create!(user_id: @user.id)
+    assert_difference 'Favorite.count', -1 do
+      @micropost.destroy
+    end
   end
 end
