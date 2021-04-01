@@ -13,6 +13,10 @@ class MicropostsController < ApplicationController
     end
   end
 
+  def index
+    @microposts = Micropost.all.page(params[:page]).per(10).search(params[:search])
+  end
+
   def destroy
     @micropost.destroy
     flash[:success] = "投稿を削除しました"
