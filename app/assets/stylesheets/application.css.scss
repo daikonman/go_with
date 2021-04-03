@@ -42,6 +42,7 @@ header {
 
 footer {
    padding: 3px 3% 3px;
+   position: fixed;
    bottom: 0%;
    width: 100%;
    display: flex;
@@ -212,7 +213,7 @@ input {
 
 .main-visual {
    padding-top: 150px;
-   margin-bottom: 100pX;
+   padding-bottom: 150pX;
    display: flex;
    flex-direction: column;
    align-items: center;
