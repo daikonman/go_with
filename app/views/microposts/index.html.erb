@@ -1,9 +1,9 @@
-<% provide(:title, '全てのユーザー') %>
+<% provide(:title, 'みんなの投稿') %>
 <h1>みんなの投稿</h1>
 
-<%= render 'shared/search_form' %>
+<%= render partial: "shared/search_form", locals: { search_for: "地名"} %>
 
-<ul class="users">
+<ul class="microposts">
   <%= render @microposts %>
 </ul>
 

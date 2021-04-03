@@ -78,10 +78,12 @@ class User < ApplicationRecord
   end
 
   def self.search(search)
-    if search
+    if search == ""
+      where(['name LIKE ?', " "])
+    elsif search
       where(['name LIKE ?', "%#{search}%"]) # 検索とnameの部分一致を表示
     else
-      all # 全て表示。
+      where(['name LIKE ?', " "])
     end
   end
 

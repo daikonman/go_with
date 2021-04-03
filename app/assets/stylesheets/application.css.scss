@@ -217,7 +217,6 @@ input {
    display: flex;
    flex-direction: column;
    align-items: center;
-   min-height: 100vh   
 }
 
 h2 {
@@ -241,7 +240,7 @@ p {
 
  
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 740px) {
    .pc-nav {
       display: none;
    }

@@ -19,7 +19,7 @@ class UsersController < ApplicationController
   end
 
   def index
-    @users = User.all.page(params[:page]).per(8).search(params[:search])
+    @users = User.page(params[:page]).per(8).search(params[:search])
   end
 
   def show
