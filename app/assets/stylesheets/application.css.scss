@@ -378,7 +378,7 @@ p {
      display: block;
      margin-left: 60px;
    }
-   .gravatar {
+   .icon {
      float: left;
      margin-right: 10px;
      margin-top: 5px;
@@ -426,6 +426,10 @@ span.image {
      padding: 10px 0;
      border-bottom: 1px solid #ddd;
    }
+}
+
+.user-icon {
+   border-radius: 25px;
 }
 
 /* search-form */

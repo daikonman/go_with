@@ -1,4 +1,8 @@
-<%= link_to gravatar_for(current_user, size: 50), current_user %>
+<% if current_user.image? %>
+  <%= image_tag  current_user.image.thumb50.url, class: "user-icon" %>
+<% else %>
+  <%= image_tag "default.jpg", alt: "user-icon", size: "50", class: "user-icon" %>
+<% end %>
 <h1><%= current_user.name %></h1>
 <span><%= link_to "プロフィールページ", current_user %></span>
 <span><%= current_user.microposts.count %>個の行きたい場所があります。</span>
