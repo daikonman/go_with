@@ -26,10 +26,6 @@
         <%= f.password_field :password_confirmation, class: 'form-control' %>
       </div>
 
-      <div class="form-btn">
-        <%= f.submit "変更する", class: "ui pink button" %>
-      </div>
-
       <h3>プロフィール画像の変更</h3>
       <% if @user.image? %>
         <%= image_tag @user.image.thumb50.url, class: "user-icon" %>
@@ -39,6 +35,13 @@
       <span class="image">
         <%= f.file_field :image, accept: 'image/jpeg,image/gif,image/png', class: "image-select-btn" %>
       </span>
+
+      <div class="form-btn">
+        <%= f.submit "変更する", class: "ui pink button" %>
+      </div>
     <% end %>
+
+    <%= link_to "退会する", user_path(current_user.id), class: "destroy-user", method: :delete, data: { confirm: "退会するとアカウントのデータが全て削除されます。\n本当に退会してもよろしいですか?" }%>
+  
   </div>
 </div>

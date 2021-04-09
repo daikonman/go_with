@@ -5,7 +5,7 @@
 <% if @favorites.any? %>
   <% @favorites.each do |favorite| %>
     <li>
-      <span class="user-image"><%= link_to gravatar_for(favorite.user, size: 50), favorite.user %></span>
+      <%= render 'users/icon' %>
       <span class="user-name"><%= favorite.user.name %></span>
     </li>
   <% end %>
