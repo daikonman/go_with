@@ -11,6 +11,8 @@
   <div class="body">
     <span class="user"><%= link_to micropost.user.name, micropost.user %></span>
     <span class="content"><%= micropost.content %></span>
+    <span class="content">募集人数：<%= micropost.amount %>人</span>
+    <span class="content">日程：<%= micropost.departure %>〜<%= micropost.back %></span>
     <span class="timestamp">
       <%= time_ago_in_words(micropost.created_at) %>前
       <% if current_user?(micropost.user) %>

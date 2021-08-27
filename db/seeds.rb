@@ -27,8 +27,10 @@ users = User.order(:created_at).take(6)
   amount = rand(2..10)
   s1 = Date.parse("2021/01/1")
   s2 = Date.parse("2021/12/31")
-  schedule = Random.rand(s1 .. s2)
+  departure = Random.rand(s1 .. s2)
+  back = departure + rand(1..5)
   users.each { |user| user.microposts.create!(content: content,
                                               amount: amount,
-                                              schedule: schedule) }
+                                              departure: departure,
+                                              back: back) }
 end
