@@ -24,5 +24,11 @@ end
 users = User.order(:created_at).take(6)
 50.times do
   content = Faker::Lorem.sentence(word_count: 5)
-  users.each { |user| user.microposts.create!(content: content) }
+  amount = rand(2..10)
+  s1 = Date.parse("2021/01/1")
+  s2 = Date.parse("2021/12/31")
+  schedule = Random.rand(s1 .. s2)
+  users.each { |user| user.microposts.create!(content: content,
+                                              amount: amount,
+                                              schedule: schedule) }
 end
