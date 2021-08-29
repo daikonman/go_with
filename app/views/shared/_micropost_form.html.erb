@@ -3,6 +3,17 @@
   <div class="form-item">
     <%= f.text_area :content, placeholder: "行きたい場所を入力する", class:"form-content" %>
   </div>
+  <div class="form-item">
+    <%= f.label  :amount, "募集人数" %>
+    <%= f.number_field :amount, in: 1.0..20.0, step: 1.0, class:"form-integer" %>
+    <h3>人</h3>
+  </div>
+  <div class="form-item">
+    <%= f.label  :departure, "日程" %>
+    <%= f.date_field :departure, class:"form-date" %>
+    <h3>〜</h3>
+    <%= f.date_field :back, class:"form-date" %>
+  </div>
   <div class="mp-form-btn">
     <%= f.submit "投稿", class: "ui pink button" %>
   </div>

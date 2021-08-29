@@ -61,6 +61,12 @@ footer {
 
 }
 
+/* static-pages */
+
+.home-container {
+   margin: 0 20px;
+}
+
 /* forms */
 
 .form-wrapper {
@@ -72,6 +78,7 @@ footer {
 }
 @media screen and (max-width: 600px) {
    .form-wrapper {
+     max-width: 400px; 
      margin-top: 40px;
    }
 }
@@ -205,7 +212,7 @@ input {
    margin: 5px 10px;
 }
 
-/* shered */
+/* shared */
 
 .page-title {
    margin: 0 auto;
@@ -236,6 +243,10 @@ p {
 
 .button-wrapper {
    text-align: center;
+}
+
+.pagenation {
+   padding: auto;
 }
 
  
@@ -390,7 +401,6 @@ p {
 .form-content {
    border: 1px solid #ddd;
    border-radius: 6px;
-   margin-left: 10px;
    padding-top: 8px;
    padding-left: 1em;
    padding-right: 1em;
@@ -400,8 +410,23 @@ p {
    max-width: 410px;
    background: #eaedf2;
    font-size: 18px;
-   display: table-cell;
+   display: flex;
    vertical-align: middle;
+   @media screen and (min-width: 600px) {
+      margin-left: 20px;
+   }
+}
+
+.form-integer {
+   width: 150px;
+   margin-right: 5px;
+}
+
+.form-date {
+   width: 180px;
+   margin-right: 10px;
+   padding:5;
+   font-size: 15px;
 }
 
 .mp-form-btn {
