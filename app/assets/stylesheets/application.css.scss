@@ -2,7 +2,7 @@
 body {
    margin: 0;
    padding: 0;
-   font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "Helvetica Neue", Helvetica, Arial, sans-serif;
+   font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "Helvetica Neue", Helvetica, Arial, sans-serif;
    background-color: #fff;
    letter-spacing : 0.2em;
    display: flex;
@@ -144,9 +144,15 @@ label {
 }
 .alert {
    margin-bottom: 10px;
+   padding: 10px;
+   border-radius: 6px;
 }
 .alert-danger {
    color: red;
+}
+.alert-success {
+   background-color: rgb(250, 168, 236);
+   color: #fff;
 }
 
 input {
